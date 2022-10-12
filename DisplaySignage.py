@@ -30,9 +30,9 @@ print("Total arguments passed:", n)
  
 # Arguments passed
 print("\nName of Python script:", sys.argv[0])
-print("\nName of Python script:", sys.argv[1])
+# print("\nName of Python script:", sys.argv[1])
 print("\nArguments passed:", end = " ")
-file_name=sys.argv[1]
+# file_name=sys.argv[1]
 #sys.exit(1)
 configur = ConfigParser()
 print (configur.read('config.ini'))
@@ -54,7 +54,7 @@ print(parent_dir)
 print(Input_image_path)
 print("direcrour is ",directory)
 print(not_needed_attribute_list)
-print(file_name)
+# print(file_name)
 
 #################Below functions are related to master table creations
 
@@ -134,7 +134,7 @@ def open_image_in_browser(path):
 
 
 
-def main():
+def raj(file_name):
     print("Hello World!")
     os.chdir(Input_image_path)
     cropped_path = os.path.join(parent_dir, directory)
@@ -259,7 +259,7 @@ def main():
                 print("Total Number of People in the Frame is ",str(len(num_of_ppl_lst)))
                 df = pd.DataFrame(my_main_list)
                 print(df)
-                #df.to_csv(r'C:\Users\rseelam\OneDrive - HARMAN\Desktop\Delete\ImageAnalysis.csv', index = False)
+                df.to_csv(r'C:\Users\zmohiyuddin\Desktop\HARMAN\Projects\Display Signage\Setup\ImageAnalysis.csv', index = False)
                 #Write your code : update query
                 #######################Below code is for creating the required fields in tabular format
                 
@@ -342,11 +342,11 @@ def main():
     return df 
 
 
-if _name_ == "_main_":
-    master_df=main()
-    print(master_df)
+# if _name_ == "_main_":
+#     master_df=main()
+#     print(master_df)
     # if master_df.Main_Group.unique()[0] == 'Family With Kids':
     #     open_image_in_browser(r'C:\Users\rseelam\My Python Files\Output_Advertisements\Family_with_kids_Add1.jpg')
     # if master_df.Main_Group.unique()[0] == 'Female Adult Group':
     #     open_image_in_browser(r'C:\Users\rseelam\My Python Files\Output_Advertisements\Female Adult Group Ad.jpg')
-    print("Main code completed")
+    # print("Main code completed")
