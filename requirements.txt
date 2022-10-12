@@ -1,0 +1,6 @@
+numpy
+pandas
+boto3
+pillow
+matplotlib
+mysql-connector-python-rf
